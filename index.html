@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The KPOP Update</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #e9e9e9;
+        color: #333;
+        padding: 10px;
+    }
+
+    .newspaper {
+        width: 850px;
+        max-width: 100%;
+        margin: auto;
+        background: #f7f7f5;
+        padding: 20px 25px 30px;
+        border-left: 3px solid #5a45b8;
+    }
+
+    /* HEADER */
+    .top-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #444;
+        padding-bottom: 10px;
+    }
+
+    .label {
+        border: 1px solid #777;
+        padding: 8px 15px;
+        font-size: 11px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 38px;
+        font-weight: 900;
+        letter-spacing: -1px;
+        color: #333;
+    }
+
+    .info-bar {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 7px 0;
+        border-bottom: 1px solid #777;
+    }
+
+    /* MAIN HEADLINE */
+    .headline {
+        text-align: center;
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 900;
+        margin: 18px 0 10px;
+        text-transform: uppercase;
+    }
+
+    .sub-headline {
+        background: #3d3d3d;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    /* CONTENT GRID */
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .left-column {
+        border-right: 1px solid #888;
+        padding-right: 15px;
+    }
+
+    /* IMAGES */
+    .main-image {
+        width: 100%;
+        height: 290px;
+        object-fit: cover;
+        display: block;
+        border: 1px solid #aaa;
+    }
+
+    .bottom-image {
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+        margin-top: 15px;
+        display: block;
+    }
+
+    /* ARTICLE */
+    .article {
+        margin-top: 18px;
+        border-left: 2px solid #888;
+        padding-left: 15px;
+    }
+
+    .article h2 {
+        font-size: 18px;
+        line-height: 1.15;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    .article p {
+        font-size: 11px;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+
+    .small-text {
+        font-size: 10px !important;
+    }
+
+    /* RIGHT COLUMN */
+    .right-column p {
+        font-size: 11px;
+        line-height: 1.55;
+        text-align: justify;
+        margin-bottom: 12px;
+    }
+
+    .right-column h2 {
+        font-size: 17px;
+        line-height: 1.2;
+        margin: 15px 0 10px;
+        text-transform: uppercase;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 650px) {
+        .newspaper {
+            padding: 15px;
+        }
+
+        .logo {
+            font-size: 25px;
+        }
+
+        .headline {
+            font-size: 19px;
+        }
+
+        .content {
+            grid-template-columns: 1fr;
+        }
+
+        .left-column {
+            border-right: none;
+            padding-right: 0;
+        }
+
+        .top-header {
+            gap: 10px;
+        }
+
+        .label {
+            padding: 6px 8px;
+            font-size: 8px;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="newspaper">
+
+    <!-- HEADER -->
+    <div class="top-header">
+        <div class="label">
+            LATEST<br>
+            SPECIAL
+        </div>
+
+        <div class="logo">THE KPOP UPDATE</div>
+
+        <div class="label">
+            HOT NEWS
+        </div>
+    </div>
+
+    <div class="info-bar">
+        <span>GWEN YVONNIE DOMINGO</span>
+        <span>BSCPE 3A</span>
+        <span>LAB 1 – WEB DEVELOPMENT</span>
+    </div>
+
+    <!-- HEADLINE -->
+    <div class="headline">
+        KPOP GROUP TOMORROW X TOGETHER'S LATEST JAPANESE<br>
+        RELEASE “SETSUNA HINA” SETS NEW SALES RECORD IN JAPAN
+    </div>
+
+    <div class="sub-headline">
+        HOW CONSISTENCY IN CREATING MASTERPIECES CONTRIBUTES TO MASSIVE SUCCESS
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <!-- LEFT COLUMN -->
+        <div class="left-column">
+
+            <img src="image1.jpg" alt="TXT Group" class="main-image">
+
+            <div class="article">
+                <h2>
+                    Tomorrow X Together Has Been Actively Promoting Locally
+                    Around the Release of the New Record.
+                </h2>
+
+                <p>
+                    On Aug. 18, fans were abuzz around the newest web
+                    premiere live stage held at Tokyo Garden Theater. They
+                    will expand contact with local fans by appearing on
+                    Japanese television on Aug. 29.
+                </p>
+
+                <p>
+                    And this activity continues all month.
+                </p>
+
+                <p>
+                    On Aug. 29, TOMORROW X TOGETHER won the Best New
+                    International Group of the Year – Male at the 2026
+                    TMF Live International Music Awards held at Hong Kong's
+                    Kai Tak Stadium.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-column">
+
+            <p>
+                On Aug. 26, Orion reported that TOMORROW X TOGETHER'S
+                latest Japanese release ranked No. 1 on the latest weekly
+                digital single ranking.
+            </p>
+
+            <p>
+                This is the first time the group's Japanese single has
+                climbed to the top position. The achievement highlights
+                their strong popularity and continuous growth in Japan.
+            </p>
+
+            <h2>
+                On the latest Hot 100 released on Aug. 26,
+                the team reached No. 1 for the first time ever.
+            </h2>
+
+            <p>
+                And swept major music charts such as hot shot song and
+                download rankings. The group continues to demonstrate
+                impressive results and international recognition.
+            </p>
+
+            <p>
+                Interest in their new musical release is also high, with
+                fans showing continued support through streaming and
+                promotions across different platforms.
+            </p>
+
+            <p>
+                The group's success marks another milestone in their
+                growing career and proves their consistency in creating
+                music that connects with audiences worldwide.
+            </p>
+
+            <img src="image2.jpg" alt="TXT Members" class="bottom-image">
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
